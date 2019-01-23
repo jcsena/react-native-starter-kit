@@ -14,9 +14,6 @@ import {
 const Navigator = {
 	setDefaultNavigator: () => {
 		Navigation.setDefaultOptions({
-			topBar: {
-				visible: false
-			},
 			bottomTabs: {
 				titleDisplayMode: 'alwaysShow',
 				visible: true,
@@ -40,7 +37,10 @@ const Navigator = {
 								children: [
 									{
 										component: {
-											name: SCREEN_EXPLORE
+											name: SCREEN_EXPLORE,
+											passProps: {
+												title: 'TAB 1'
+											}
 										}
 									}
 								],
@@ -53,7 +53,7 @@ const Navigator = {
 									topBar: {
 										title: {
 											text: 'Tab 1',
-											color: 'white'
+											color: 'black'
 										}
 									}
 								}
@@ -64,7 +64,10 @@ const Navigator = {
 								children: [
 									{
 										component: {
-											name: SCREEN_EXPLORE
+											name: SCREEN_EXPLORE,
+											passProps: {
+												title: 'TAB 2'
+											}
 										}
 									}
 								],
@@ -77,7 +80,7 @@ const Navigator = {
 									topBar: {
 										title: {
 											text: 'Tab 2',
-											color: 'white'
+											color: 'black'
 										}
 									}
 								}
@@ -88,7 +91,10 @@ const Navigator = {
 								children: [
 									{
 										component: {
-											name: SCREEN_EXPLORE
+											name: SCREEN_EXPLORE,
+											passProps: {
+												title: 'TAB 3'
+											}
 										}
 									}
 								],
@@ -101,7 +107,7 @@ const Navigator = {
 									topBar: {
 										title: {
 											text: 'Tab 3',
-											color: 'white'
+											color: 'black'
 										}
 									}
 								}
